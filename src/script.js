@@ -44,7 +44,7 @@ function fight(player1, player2, player1Health, player2Health) {
       }
     } else {
       player1Health = attackPlayer(player1Health);
-      logHealth(player1, player2);
+      logHealth(player1, player1Health);
       if (isDead(player1Health) === true) {
         logDeath(player2, player1);
         break;
